@@ -1,0 +1,46 @@
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.companycontacts {
+  width: 231px;
+}
+
+.social {
+  margin-left: 156px;
+  margin-top: 12px;
+}
+
+.social-list {
+  display: inline-flex;
+}
+
+.client-name {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.client-name a {
+  box-sizing: border-box;
+  display: flex;
+  border: 1px solid $primary-clients-color;
+  width: 170px;
+  height: 90px;
+  border-radius: 4px;
+  fill: $primary-clients-color;
+  align-items: center;
+  justify-content: center;
+  &:hover,
+  &:focus {
+    fill: $primary-effect-color;
+    border: 1px solid $primary-effect-color;
+    border-radius: 4px;
+    box-shadow: 2px 3px 3px rgba(40, 67, 107, 0.42);
+    transition: fill 250ms $timing-function;
+    transition: color 250ms $timing-function;
+    transition: box-shadow 250ms $timing-function;
+  }
+}

@@ -1,0 +1,79 @@
+.wrapper {
+  font-family: $font-family, sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  // width: 100%;
+  min-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1.portfolio {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.current-link {
+  position: relative;
+  color: $primary-effect-color;
+  text-transform: capitalize;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  max-height: 80px;
+  &::after {
+    position: absolute;
+
+    content: '';
+    display: block;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 4px;
+    background-color: $primary-effect-color;
+    border-radius: 2px;
+  }
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: $primary-headers-color;
+  margin-bottom: 50px;
+  margin-top: 0;
+  text-align: center;
+}
+.clients,
+.portfolio {
+  margin: 94px 215px;
+}

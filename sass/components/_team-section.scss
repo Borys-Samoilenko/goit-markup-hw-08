@@ -1,0 +1,89 @@
+.team {
+  background-color: $primary-button-color;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.teammate,
+.profession {
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+ul.teammate-social {
+  text-align: center;
+}
+.teammate-list {
+  display: flex;
+}
+
+.teammate-list .teammate-card {
+  width: 270px;
+  margin-right: 30px;
+  &:nth-child(4n) {
+    margin-right: 0px;
+  }
+}
+.ui {
+  text-transform: uppercase;
+}
+
+.teammate {
+  font-weight: 500;
+  color: $primary-headers-color;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.teammate-card {
+  background-color: $primary-white-color;
+  padding: 0;
+  margin: 30;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.photo {
+  margin-bottom: 30px;
+}
+
+.profession {
+  font-size: 400;
+  color: $primary-text-color;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.icon-item {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 30px;
+  & a {
+    list-style: none;
+    height: 44px;
+    width: 44px;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: $primary-clients-color;
+    padding: 12px;
+  }
+}
+
+.icon-teammate {
+  height: 20px;
+  width: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  fill: currentColor;
+}
+.teammate-social a:focus,
+.teammate-social a:hover {
+  color: $primary-white-color;
+  background-color: $primary-effect-color;
+  box-shadow: 2px 3px 3px rgba(40, 67, 107, 0.42);
+  transition: box-shadow 250ms $timing-function;
+}

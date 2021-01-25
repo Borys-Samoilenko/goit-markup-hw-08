@@ -1,0 +1,74 @@
+.page-header {
+  background-color: $primary-white-color;
+  height: 80px;
+  border-bottom: 1px solid $line-color;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  max-height: 80px;
+}
+.nav {
+  display: flex;
+  margin-left: 93px;
+  width: max-content;
+}
+
+.nav .item + .item {
+  margin-left: 50px;
+}
+
+.nav .link {
+  display: block;
+  color: $primary-headers-color;
+  text-transform: capitalize;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  &:hover,
+  &:focus {
+    color: $primary-effect-color;
+    fill: $primary-effect-color;
+    transition: fill 250ms $timing-function;
+    transition: color 250ms $timing-function;
+  }
+}
+
+.contact-us {
+  display: flex;
+  width: max-content;
+  margin-left: 305px;
+}
+
+.contact-us .item + .item {
+  margin-left: 30px;
+}
+.contact-us .item + .item:last-child {
+  margin-right: 0px;
+}
+
+.contact-us .link {
+  display: flex;
+  margin-right: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $primary-text-color;
+  fill: $primary-text-color;
+  transition: fill 250ms $timing-function;
+  transition: color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: $primary-effect-color;
+    fill: $primary-effect-color;
+    transition: fill 250ms $timing-function;
+    transition: color 250ms $timing-function;
+  }
+}
+
+.icon-envelope svg {
+  margin-top: 2px;
+}
+.icon-envelope svg,
+.icon-smartphone svg {
+  margin-right: 10px;
+}
